@@ -20,3 +20,5 @@ with st.expander('📊 View Data'):
     st.write('**Y (Target / Labels)**')
     y = df['species']
     st.dataframe(y)
+with st.expander('Data Visulaisation'):
+    st.scatter_chart(data=df,x='bill_length_mm',y='body_mass_g',color='species')
